@@ -1,1 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Spinnaker&display=swap");
+
+/* CSS RESET */
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Spinnaker", sans-serif;
+  background-color: rgb(248, 142, 130);
+}
+
 /*  Add your styling here */
+
+header {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #72efdd;
+  color: #fff;
+  height: 12rem;
+}
+
+.logo {
+  width: 6rem;
+  height: auto;
+  margin: 1rem;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.76);
+  font-size: 1.1rem;
+  margin: 5rem 1rem 1rem 1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.hamburger-icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: 3rem;
+  margin: 0 2rem;
+  display: flex;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.navbar-links {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+}
+
+.navbar-links.hamburger-toggle {
+  display: flex;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.navbar-links li {
+  margin-bottom: 1rem;
+}
+
+.welcome h2 {
+  margin: 1rem;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.welcome p {
+  margin: 1rem;
+  color: rgba(0, 0, 0, 0.76);
+}
+
+.image-container {
+  margin: 1.5rem;
+}
+
+.main-image {
+  width: 100%;
+  margin: 1rem auto;
+  border: 2px solid #6fceb5;
+  border-radius: 5px;
+}
+
+.image-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.main-image img {
+  width: 8rem;
+  margin: 0.5rem;
+  border: 2px solid #6fceb5;
+  border-radius: 5px;
+}
+
+.image-cards img {
+  width: 9rem;
+  margin: 0.5rem;
+  border: 2px solid #6fceb5;
+  border-radius: 5px;
+}
+
+.social-media ul li {
+  list-style: none;
+}
+
+.social-media img {
+  list-style: none;
+  width: 2.5rem;
+  margin: 5% 1% 1% 1%;
+}
+
+.copyright p {
+  text-align: center;
+}
+
+/* **** FIRST BREAK POINT OF 540PX ****  */
+
+@media (min-width: 540px) {
+  h1 {
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 1.6rem;
+    margin: 5rem 1rem 1rem 1rem;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+  }
+  .navbar-links li {
+    margin-bottom: 1;
+  }
+}
+
+/* **** SECOND BREAK POINT OF 900PX ****  */
+
+@media (min-width: 900px) {
+  .hamburger-icon {
+    display: none;
+  }
+
+  .logo {
+    width: 8rem;
+  }
+
+  h1 {
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 2rem;
+    margin: 1rem 1rem 1rem 40%;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+
+  .navbar-links {
+    background-color: rgb(248, 142, 130);
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    width: 90vw;
+    border-radius: 15px;
+  }
+
+  .navbar-links {
+    width: 90vw;
+    margin: 1rem 0.5rem 1rem 5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .navbar-links li {
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  .navbar-links li a {
+    align-items: flex-end;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+    padding: 1rem;
+    margin: 0 1rem;
+    display: block;
+  }
+
+  .navbar-links li:hover {
+    background-color: #72efdd;
+    border: 2px solid white;
+    margin: -2px;
+    border-radius: 50px;
+  }
+
+  .navbar-links ul {
+    margin: 0.5rem 2rem 0.5rem 7rem;
+    padding: 0;
+    display: flex;
+  }
+
+  .hero {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .welcome {
+    width: 50%;
+    height: 60vh;
+    margin: 1rem;
+  }
+
+  .welcome p {
+    width: 100%;
+    padding-top: 8rem;
+    font-size: 1.3rem;
+  }
+
+  .welcome h2 {
+    font-size: 2.5rem;
+    text-align: end;
+    padding-right: 2rem;
+    margin-top: 8rem;
+  }
+
+  .main-image {
+    justify-content: flex-end;
+    min-width: 32rem;
+  }
+
+  .image-cards img {
+    width: 20%;
+    margin: 0.5rem auto;
+    border: 2px solid #6fceb5;
+    border-radius: 5px;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: center;
+    width: 2.5rem;
+    margin: 1rem auto;
+  }
+
+  .social-media img {
+    margin: 1.5rem;
+  }
+
+  footer img {
+    margin: 1rem;
+  }
+}
