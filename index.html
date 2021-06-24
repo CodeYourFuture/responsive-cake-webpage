@@ -5,12 +5,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
+    <title>PowderedBlue</title>
     <!-- Add a link to your css file here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- Add your markup here -->
+    <header>
+
+        <div class="container d-flex flex-column flex-lg-column-reverse">
+
+            <!-- Navigation -->
+            <nav class="navbar d-lg-none navbar-expand-lg  navbar-light light-blue lighten-4 flex-row-reverse">
+
+                <!-- ham menu Collapse button -->
+                <button class="navbar-toggler border-0 custom-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="dark-blue-text navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse justify-content-lg-end" id="navbarNav">
+                    <!-- Links -->
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item text-uppercase"><a href="#" class="nav-link">home</a> </li>
+                        <li class="nav-item text-uppercase"><a href="#" class="nav-link"> cakes</a></li>
+                        <li class="nav-item text-uppercase"><a href="#" class="nav-link"> order-in</a></li>
+                        <li class="nav-item text-uppercase"><a href="#" class="nav-link"> lessons</a></li>
+                        <li class="nav-item text-uppercase"><a href="#" class="nav-link"> about</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+            <!-- Navigation -->
+
+            <div class="img-text d-flex align-items-end justify-content-lg-between">
+                <figure>
+                    <img src="img/undraw_ice_cream_s2rh.svg" class="img-fluid" alt="logo">
+                </figure>
+
+
+                <div class="slogan">
+                    <p>The best cake in town, delivered to your door</p>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Main -->
+    <main>
+
+        <section class="container lg-nav d-none d-lg-block lg-custom-nav">
+            <div>
+                <ul class="navbar-nav justify-content-end flex-lg-row mt-5 py-3">
+                    <li class="nav-item text-uppercase me-5 px-4 align-items-lg-center">
+                        <a  href="#" class="nav-link">home</a> 
+                    </li>
+                    <li class="nav-item text-uppercase me-5 px-4 align-items-lg-center"><a href="#" class="nav-link">cakes</a></li>
+                    <li class="nav-item text-uppercase me-5 px-4 align-items-lg-center"><a href="#" class="nav-link"> order-in</a></li>
+                    <li class="nav-item text-uppercase me-5 px-4 align-items-lg-center"><a href="#" class="nav-link"> lessons</a></li>
+                    <li class="nav-item text-uppercase me-5 px-4 align-items-lg-center"><a href="#" class="nav-link"> about</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- welcome section -->
+        <section class="container my-5 welcome d-flex flex-column flex-lg-row-reverse">
+
+            <div class="welcome-text ms-5 text-lg-end">
+                <h1>
+                    Welcome
+                </h1>
+
+                <p class="my-3 lh-lg">
+                    Muffin marshmallow oat cake gummi bears ice cream jelly beans. Oat cake sesame snaps sweet roll
+                    jelly
+                    cake lemon drops soufflé marshmallow. Cotton candy apple pie biscuit sugar plum. Cupcake cake
+                    macaroon.
+                    Dessert pie liquorice jelly. Soufflé muffin oat cake. Halvah croissant powder muffin ice cream sugar
+                    plum soufflé cheesecake.
+                </p>
+            </div>
+
+            <figure>
+                <img class="img-fluid" src="img/undraw_Birthday_cake_2wxy.svg" alt="Birthday image">
+            </figure>
+
+
+        </section>
+
+        <!--  -->
+
+        <!--  -->
+
+        <section class="container my-5">
+
+            <div class="row my-2">
+
+                <div class="col-6 col-lg-3 item">
+                    <img class="img-fluid grid-img" src="img/Dessert_Flatline.svg" alt="Dessert image">
+                </div>
+
+                <div class="col-6 col-lg-3 item">
+                    <img class="img-fluid grid-img" src="img/undraw_cookie_love_ulvn.svg" alt="Cookie image">
+                </div>
+
+                <!-- Force next columns to break to new line -->
+    <!-- <div class="w-sm-100"></div> -->
+
+                <div class="col-6 col-lg-3 item">
+                    <img src="img/undraw_tasting_de22.svg" alt="Cupcake image" class="img-fluid grid-img">
+                </div>
+
+                <div class="col-6 col-lg-3 item">
+                    <img src="img/undraw_donut_love_kau1.svg" alt="Donut image" class="img-fluid grid-img">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class=" mt-5 pt-5 pb-3">
+        <div class="container d-lg-flex justify-content-lg-evenly">
+            <p class="fs-6">Cookie candy pudding.</p>
+            <p class="fs-6">Chocolate cake wafer.</p>
+            <p class="fs-6">Cookie cookie dragée cake.</p>
+        </div>
+
+        <p class="text-center mt-5 mb-0">© PowderedBlue. Created with <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="#e63946" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+            </svg> </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

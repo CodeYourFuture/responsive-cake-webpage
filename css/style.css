@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Kirang+Haerang&display=swap');
+
+body {
+    font-family: 'Kirang Haerang', cursive;
+}
+
+header, footer {
+    /* background-color: #a4e1d9; */
+    background-color: #a4e1d94a;
+}
+
+header .navbar-light .navbar-nav .nav-link {
+    color: #233557;
+    font-size: 1.2rem;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #1d3557;
+}
+
+p {
+    font-family: 'Jua', sans-serif;
+    color: #457b9d;
+}
+
+ 
+.custom-toggler.navbar-toggler {
+    border-color: #1d3557;
+}
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+  
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(29, 53, 87, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+    height: 100%;
+}
+
+.navbar-brand { 
+    margin-right: 4rem;
+}
+
+li {
+    color: #1d3557;
+}
+.welcome h1 {
+    font-weight: bold;
+}
+
+.img-text figure {
+    width: 100%;
+}
+
+.grid-img {
+    background-color: #a4e1d94a;
+    height: 20vh;
+    width: 100vw;
+}
+
+.item {
+    margin: 0.8rem 0;
+}
+
+
+@media (min-width: 540px) { 
+    .slogan p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .img-text figure {
+        width: 20%;
+    }
+
+    li.nav-item.text-uppercase {
+    background-color: #1d3557;
+    }
+    li.nav-item.text-uppercase a{
+        color: #fff;
+        }
+    
+    .lg-custom-nav ul {
+        background-color: #a4e1d94a;
+    }
+
+    .welcome-text {
+        width: 80%;
+    }
+
+    .grid-img {
+        height: 100%;
+    }
+
+    .item {
+        margin: 0;
+    }
+
+
+footer .fs-6 {
+    background: #1d3557;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+}
