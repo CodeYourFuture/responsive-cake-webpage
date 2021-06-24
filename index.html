@@ -2,15 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Responsive Cake webpage</title>
+	<!-- Add a link to your css file here -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
-    <!-- Add your markup here -->
+	<!-- Add your markup here -->
+	<section class="header">
+		<div class="header-wrapper container">
+			<img src="img/logo.png" alt="logo-cake" class="logo">
+			<input type="checkbox" id="toggle" />
+			<label for="toggle" id="toggle-open">&#9776</label>
+			<label for="toggle" id="toggle-close">&#10006</label>
+			<nav class="menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Cakes</a></li>
+					<li><a href="#">Orderin</a></li>
+					<li><a href="#">Lessons</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</nav>
+			<p>The best cakes in town delivered to your door</p>
+		</div>
+	</section>
+	<div class="menu-desktop container">
+		<nav class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Cakes</a></li>
+				<li><a href="#">Orderin</a></li>
+				<li><a href="#">Lessons</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</nav>
+	</div>
+	<main>
+		<section class="welcome container">
+			<div class="welcome__inner">
+				<div class="welcome__content">
+					<h2>Welcome</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+						labore et
+						dolore magna aliqua. </p>
+				</div>
+				<img src="img/welcome-img.jpg" alt="cakes on a table" class="welcome-img">
+			</div>
+		</section>
+		<section class="gallery container">
+			<div class="gallery-wrapper">
+				<div class="gallery-item-box"><img src="img/gallery-1.jpg" alt="donuts" class="gallery-item"></div>
+				<div class="gallery-item-box"><img src="img/gallery-2.jpg" alt="a piece of cake" class="gallery-item"></div>
+				<div class="gallery-item-box"><img src="img/gallery-3.jpg" alt="a muffin" class="gallery-item"></div>
+				<div class="gallery-item-box"><img src="img/gallery-4.jpg" alt="a cake" class="gallery-item"></div>
+
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Cakes</a></li>
+				<li><a href="#">Orderin</a></li>
+			</ul>
+			<p>Created by Ivan Zhukov</p>
+		</div>
+	</footer>
 </body>
 
 </html>
