@@ -5,12 +5,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Responsive Cake webpage</title>
-    <!-- Add a link to your css file here -->
+    <script src="JS/main.js"></script>
 </head>
 
 <body>
-    <!-- Add your markup here -->
+    <header>
+        <section class="navbar section-top">
+            
+            <div class="header" >
+                <img src="img/header.png" class="top-img"alt="top"/>
+                <img class="brand" src="img/Cake-Header.png" alt="brand" />
+                <h1 class="text">The Cake You Want</h1>
+            </div>
+            <button class="hamburger" aria-label="hamburger">
+                <div class="bar"></div>
+            </button>
+            <nav class="mobile-nav">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Prices</a>
+                <a href="#">Manual Book</a>
+                <a href="#">ABOUT US</a>
+            </nav>
+        </section>
+        
+        <nav class="hidden-nav">
+            <button class="button">Home</button>
+            <button class="button">Products</button>
+            <button class="button">Prices</button>
+            <button class="button">Manual Book</button>
+            <button class="button">ABOUT US</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h5>Cooking.</h5>
+            <h5>Tasting.</h5>
+            <h5>Living.</h5>
+
+        </section>
+        <section >
+
+            <div class="header-text">
+                <h3>Who are we?</h3>
+                <p>
+                    
+                    The "Cake Shop" is a Palestinian Brand that 
+                    started as a small family business.
+                    
+                    The owners are ibrahim mattar
+                    , supported by a staff of mena alliances.
+                </p>
+            </div>
+        </section>
+
+    <!-- Tab Section -->
+        <section >
+           <!-- Tab links -->
+           <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Today')" id="defaultOpen">Today Cake</button>
+            <button class="tablinks" onclick="openCity(event, 'Hacks')">Hacks </button>
+            <button class="tablinks" onclick="openCity(event, 'Facts')">Facts </button>
+            </div>
+          
+            <!-- Tab content -->
+            <div id="Today" class="tabcontent">
+                <h3>Today Cake</h3>
+                <img
+                    class="banner-img"
+                    src="img/swapnil-dwivedi.jpg"
+                    alt="banner cakes"
+                />
+            </div>
+          
+            <div id="Hacks" class="tabcontent">
+                <h3>Cake hacks</h3>
+                <p>Here are some boxed-mix hacks to make your cakes rich and flavorful.</p>
+                    <ol>
+                    <li>Start with the holy grail of cake hacks: Add an extra egg, swap oil for butter, and replace water with milk.</li>
+                    <li>Add hot water to chocolate boxed mix.</li>
+                    <li>Change the egg structure for a new texture. </li>
+                    <li>Use coffee instead of water. </li>
+                    <li>Add mayonnaise to your cake.</li>
+                </ol>
+            </div>
+          
+          <div id="Facts" class="tabcontent">
+            <h3>Fun Facts About Birthday Cakes!</h3>
+            <ol> 
+                <li>The first birthday cakes were Geburtstagskuchen. </li>
+                <li>We spend over £1million a day on birthday cake. </li>
+                <li>Before birthday cake candles, the candles on cake were saved for the Goddesses of the Moon. </li>
+                <li>The number of candles on a cake traditionally represent the years of your life you're celebrating.</li>
+            </ol>
+          </div>
+
+        </section>
+         <div class="full-width-borders">
+            <h1>Best Collection</h1>
+         </div>
+        <section class="cake-grid">
+            
+            <div class="cake-types">
+                <img
+                    class="img"
+                    src="img/lindsay-cotter.jpg"
+                    alt="wedding cake"
+                />
+                <p>Unforgettable ingredients</p>
+            </div>
+            <div class="cake-types">
+                <img
+                    class="img"
+                    src="img/jordane-mathieu.jpg"
+                    alt="afternoon tea"
+                />
+                <p>Another world</p>
+            </div>
+            <div class="cake-types">
+                <img class="img" src="img/heather-barnes.jpg" alt="cupcakes" />
+                <p>Birthdays cakes</p>
+            </div>
+            <div class="cake-types">
+                <img
+                    class="img"
+                    src="img/alexandra-gornago.jpg"
+                    alt="occasions"
+                />
+                <p>Cake for wedding</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-container">
+            
+            <p>The Cake Shop</p>
+            <p>We Accept</p>
+            <p>Contact Us</p>
+            <p>Follow Us</p>
+        </section>
+
+        <section class="copyright">
+            <p>&copy; Copyright © 2021 by The Cake Shop All rights reserved. Powered by ibmmtr</p>
+        </section>
+    </footer>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+        </script>
 </body>
 
 </html>
