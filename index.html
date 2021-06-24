@@ -1,16 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Responsive Cake webpage</title>
+    <title>Responsive CupCake webpage</title>
+    
     <!-- Add a link to your css file here -->
+
+    <!--fav icon link-->
+    <link rel="icon" href="/img/fav-icon.jpg">
+
+     <!--font-awesome cdn-->
+     <link rel="preconnect" href="https://cdnjs.com/libraries/font-awesome">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--google font-->
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet">
+
+<!--custom css files-->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" media="screen and (min-width: 540px)" href="/media_540.css">
+<link rel="stylesheet" media="screen and (min-width: 900px)" href="/media_900.css">
 </head>
-
 <body>
-    <!-- Add your markup here -->
-</body>
+    <header id="header-section">
+        <img src="/img/cupcake-logo.png" alt="logo icon of fairy CupCake" height="50px" width="40px" class="logo-pic">
+        <nav class="navigation">           
+            <div class="hamburger_menu">
+                <input type="checkbox" id="nav_checkbox" class="nav_checkbox">
+                <label for="nav_checkbox" class="nav_toggle">
+                    <i class="fa fas fa-bars menu-icon"></i>
+                    <i class="fas fa-times menu-icon"></i>
+                </label>
+                <ul class="navbar">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#featured" class="nav-link">Featured</a></li>
+                    <li class="nav-item"><a href="#menu-gallery" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>              
+        </nav>
+        <aside class="intro-1">
+            <p class="sub-heading">The Best Cakes in Town Delivered to Your Door</p>
+            <button class="btn" type="submit">Shop Now</button>
+        </aside>       
+    </header>
+    <!--header ends here-->
+    <main class="container grid-box">
+        <section id="home">
+            <article class="home grid-box">
+                <h1 class="lead">Welcome</h1>
+                <p class="description" id="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta harum ea repudiandae quaerat voluptatum eum vero illo expedita, dolor tempora? Quas itaque autem sint accusantium cum veritatis fugit nemo enim. Illo excepturi corporis sunt commodi. Quo suscipit eveniet repellat recusandae iusto excepturi laboriosam aut natus nam dicta enim dignissimos! </p>
+          </article>  
+            <img src="/img/cookie shop.jpeg" alt="a picture of a  cookie shop" class="about-pic" height="300px" width="320px">
+        
+        </section>
+            <!----------home section ends------------>
+        <section id="featured">
+            <img class="feature-img" src="/img/dessert-1.jpeg" alt="cakes and cookie shop" width="400px" height="300px">
+            <div class="special-offer">
+                <h2>Special Offer</h2>
+                <p>Special Offer for Festive Seasons</p>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </section>
+        <div class="bottom-line"></div>
+        <!--menu section starts here-->
+        <section id="menu-gallery" class="grid-box">
+            <h2 class="lead">Our Menu</h2>
+            <a href="#" class="view-all">View All</a>
+            <div class="menu-container">
+            <article class="menu_item">
+                    <div class="menu-card">
+                        <div class="new-notification">New</div>
+                        <img class="menu-img" src="/img/special-ocassion-2.jpeg" alt="special wedding cakes" width="260px" height="260px">
+                        <div class="new-link">
+                            <a href="#" class="btn">View Product</a>
+                        </div>    
+                    </div>
+                    <div class="menu-data">
+                        <h3 class="menu-name"> Purple Wedding Cake</h3>
+                        <span class="menu-price">£300.00</span>
+                    </div>
+                    
+                </article>
+            <article class="menu_item">
+                    <div class="menu-card">
+                        <div class="new-notification">New</div>
+                        <img class="menu-img" src="/img/fresh ingredient-1.jpeg" alt="special wedding cakes" width="260px" height="290px">
+                        <div class="new-link">
+                            <a href="#" class="btn">View Product</a>
+                        </div>  
+                    </div>
+                    <div class="menu-data">
+                        <h3 class="menu-name"> Fresh Cream Cakes</h3>
+                        <span class="menu-price">£30.00</span>
+                    </div>
+                </article>
+            <article class="menu_item">
+                    <div class="menu-card">
+                        <div class="new-notification">New</div>
+                        <img class="menu-img" src="/img/cupcakes-1.jpeg" alt="cookie cupcakes" width="260px" height="290px">
+                        <div class="new-link">
+                            <a href="#" class="btn">View Product</a>
+                        </div>  
+                    </div>
+                    <div class="menu-data">
+                        <h3 class="menu-name"> Oreo Cup Cakes</h3>
+                        <span class="menu-price">£5.50</span>
+                    </div>
+                </article>
+            <article class="menu_item">
+                    <div class="menu-card">
+                        <div class="new-notification">New</div>
+                        <img class="menu-img" src="/img/BirthdayCake-1.jpeg" alt="birthday cakes" width="260px" height="290px">
+                        <div class="new-link">
+                            <a href="#" class="btn">View Product</a>
+                        </div>  
+                    </div>
+                    <div class="menu-data">
+                        <h3 class="menu-name"> Birthday Cakes</h3>
+                        <span class="menu-price">£20.00</span>
+                    </div>
+            </article>
+        </div>
+        </section>   
+   <!--contact section-->
+   <!--news letter-->
+   <section class="contact" id="contact">
+    <div class="grid-box" >
+            <h3 class="lead">Contact Us</h3>
+            <p class="newsletter-description">For promotion new menus and sales, please sign up!!</p>
+<!--form starts here-->
+            <form action="" class="contact-form">
+                <input type="email" class="news-input" placeholder="Enter you email" required>
+                <button class="submit-btn">Submit</button>
+            </form>       
+    </div>
+</section>
+</main>
+<!--main section ends here -->
 
+<!---footer starts here-->
+<footer>
+<section id="footer-container" class="grid-box">
+<aside class="footer-box-1">
+    <h3 class="lead">Payment Options</h3>
+    <div class="pay">
+    <a href="#"><i class="fab fa-apple-pay payment"></i>Apple Pay</a><br>
+    <a href="#"><i class="fab fa-google-pay payment"></i>Google Pay</a>  
+    </div>       
+</aside>
+
+<!--social media-->
+<aside class="social-media grid-box">
+    <div class="sponsor-logo">
+        <a href="www.facebook.com"><img class="s-media" src="/img/facebook-icon.svg" alt="facebook logo" height="35px" width="35px"></a>
+
+        <a href="www.instagram.com"><img class="s-media" src="/img/instagram-icon.svg" alt="instagram logo" height="35px" width="35px"></a>
+
+        <a href="www.twitter.com"><img class="s-media" src="/img/twitter-icon.svg" alt="twitter logo" height="35px" width="35px"></a>
+
+        <a href="www.youtube.com"><img class="s-media" src="/img/YouTubeMusic_Logo.png" alt="youtube logo" height="35px" width="35px"></a>
+    </div>
+</aside>
+</section>
+<p class="footer-copyright">&169; 2021 copyright all rights reserved</p> 
+</footer>
+</footer>
+
+</body>
 </html>
