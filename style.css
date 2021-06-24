@@ -1,1 +1,254 @@
-/*  Add your styling here */
+body {
+    font-family: 'Karla', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: whitesmoke;
+    margin: 0;
+    /* border: 3px solid red; */
+}
+/* header style */
+.header-container {
+    display: grid;
+    grid-template-areas: 
+    "box1 box2"
+    "box1 box3";
+    background-color: #fff;
+    box-shadow: 0 10px 5px gray;
+
+    
+}
+/* logo style */
+.logo {
+    margin: 40px 30px;
+    grid-area: box1;
+    width: 120px;
+}
+/* header heading style */
+.welcome {
+    align-self:flex-end;
+    grid-area: box3;
+}
+.welcome h2 {
+    color:black ;
+    font-size: 26px;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: normal;
+    padding-right: 20px;
+    text-align: end;
+}
+
+.welcome-img {
+    width: 100%;
+    object-fit:cover;
+}
+/* nav-bar style */
+.menu { 
+    text-align: center;
+    width: 100vw;
+    display: none;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute; 
+    left: 0;
+    top: 30px;
+    margin-top: 20px;
+    
+        
+}
+ .menu a {
+    display: block;
+    margin: 0;
+    color: #31ac72;
+    padding: 10px;
+    text-decoration: none;
+    padding: 15px;
+    box-shadow: 0 3px 3px gray;
+    
+}
+.menu a:hover {
+    cursor: pointer;
+    background-color: #9FDCC0;
+    color: white;
+    font-weight: bolder;
+    transition: background-color 0.5s ease;
+}
+/* hamburger menu style */
+ #toggle:checked + .menu {
+    display: block;
+
+}
+
+#toggle {
+     z-index: 1;  
+
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 36px;
+    line-height: 70px;
+    display: block;
+    width: 26px;
+    float: right;
+    cursor: pointer;
+}
+        
+#toggle {
+    display: none;
+}
+/* introduction section style */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 50px 20px;
+}
+
+.int-wel h3 {
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
+.int-wel p {
+    letter-spacing: 2px;
+    line-height: 26px;
+    margin-bottom: 40px;
+}
+/* gallery images style */
+.gallery {
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    grid-gap: 20px;
+}
+.gallery img {
+    width: 40vw;
+    height: 40vw;
+    transition: transform 0.5s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+/* footer style */
+footer {
+    margin-top: 60px;
+    margin-bottom: 0;
+    background-color:#cde9dc;
+}
+.footer-button a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color:whitesmoke;
+}
+
+.footer-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* margin: 40px auto 40px 20px;  */
+
+}
+
+button {
+    background-color: #28624b ;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 20px auto;
+    width: 100px;
+
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1rem;
+}
+/* media queries */
+@media screen and (min-width: 540px) {
+   label {
+        display: none;
+   }
+
+   #toggle:checked + .menu {
+       display: flex;
+       
+   }
+
+   .menu {
+        top: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-content: flex-end;
+        position: absolute;
+        background-color: white;
+        width: 90vw;
+   }
+
+    .menu a {
+        background-color: #31ac72;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        letter-spacing: 3px;
+        font-weight: bold;
+        
+    }
+
+    .menu a:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s ease;
+        background-color: #9FDCC0;
+    }
+
+   .intro {
+       margin-top: 200px;
+   }
+}
+
+@media screen and (min-width:900px) {
+.intro {
+flex-direction: row-reverse;
+}
+
+.welcome-img {
+    width: 60vw;
+    margin-left: 20px;
+}
+
+.int-wel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+}
+.int-wel p {
+    font-size: 24px;
+    letter-spacing: 2px;
+    line-height: 36px;
+    padding-left: 10px;
+} 
+.int-wel h3 {
+    font-size: 40px;
+}
+.gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 20vw;
+    height: 20vw;
+}
+
+.footer-button {
+    flex-direction: row;
+    justify-content: center;
+}
+}
