@@ -1,1 +1,165 @@
 /*  Add your styling here */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  background-color: rgb(229, 219, 230);
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: rgb(14, 8, 8);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+  position: relative;
+}
+
+.hero-text h1 {
+  font-family: "Tangerine", serif;
+  font-size: 1.8rem;
+  margin-top: 100px;
+}
+header p {
+  align-self: flex-end;
+  text-align: right;
+}
+.logo-image {
+  padding-bottom: 15px;
+}
+
+.hamburger {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav-bar {
+  background-color: rgb(196, 147, 147);
+  border-radius: 5px;
+  position: absolute;
+  right: 0px;
+  width: 50vw;
+  height: 70vw;
+  top: 0px;
+  align-items: center;
+  display: none;
+}
+.nav-bar.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 35px;
+}
+
+nav ul li {
+  list-style: none;
+  height: 40px;
+  /* display: grid; */
+  place-items: center;
+}
+
+/* main section hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  margin: 20px 0;
+}
+.hero-text {
+  width: 100%;
+  text-align: center;
+  margin-right: 30px;
+}
+/*  Main (product section)*/
+
+.product-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  place-items: center;
+  width: 100%;
+  height: auto;
+}
+
+/* footer */
+.p1 {
+  text-align: center;
+  margin: 50px auto 10px;
+}
+.media-icons svg {
+  border: rgb(41, 41, 39) solid 1px;
+  border-radius: 50%;
+  padding: 5px;
+}
+.media-icons {
+  display: flex;
+  justify-content: center;
+}
+.p2 {
+  text-align: center;
+}
+/* media queries */
+@media screen and (min-width: 550px) {
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 750px) {
+  .hamburger {
+    display: none;
+  }
+  .logo-p {
+    font-family: cursive, sans-serif;
+    font-size: 1.6rem;
+    font-weight: lighter;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .nav-bar {
+    border-radius: 5px;
+    position: absolute;
+    top: 162px;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    height: 9vh;
+  }
+  .nav-bar.show {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-links {
+    font-size: medium;
+    padding: 5px;
+    list-style: none;
+  }
+}
+@media screen and (min-width: 850px) {
+  .product-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
