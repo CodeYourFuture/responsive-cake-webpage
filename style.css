@@ -1,1 +1,83 @@
-/*  Add your styling here */
+* {
+  box-sizing: border-box;
+}
+
+/*secttion 1*/
+.section-1 {
+  padding: 20vmin 0;
+  background-color: #ff9100;
+}
+.section-1 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
+  
+}
+
+/* Navbar Decoration */
+.mynav {
+  background-color: #ff9100;
+}
+.mynav a {
+  margin-right: 30px;
+  font-size: 0.9em;
+  background-color: #ff9100;
+}
+
+.mynav a:hover {
+  border-bottom: 2px solid #ff9100;
+}
+.active a {
+  font-style: normal;
+  background-color: #6f00ff);
+  border-bottom: 2px solid #181174;
+}
+
+header {
+  background-color: rgb(255, 145, 0);
+}
+.bg-light{
+  background-color: hsl(34, 100%, 50%);
+}
+.figure-caption{
+  font-size: 90%;
+  color: #ff9100;
+  text-transform:uppercase;
+  font-weight:600;
+}
+
+/* Footer*/
+footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color: rgb(255, 250, 250);
+
+  background: #dd6f08d0;
+}
+footer input::placeholder {
+  color: white !important;
+}
+footer .input-group .input-group-text {
+  background: rgb(226, 116, 43);
+}
+footer.column i {
+  color: rgb(255, 94, 0);
+}
+footer.column i + i {
+  padding: 0 0.5em;
+}
+.footer-bottom {
+  text-align: center;
+  color: rgb(19, 17, 17);
+  padding-top: 50px;
+}
+
+@media (min-width: 540px) {
+   p{
+       font-size: 1.25rem;
+   } 
+}
