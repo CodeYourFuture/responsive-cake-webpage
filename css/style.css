@@ -1,0 +1,311 @@
+/*----------general setup-------------*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+/*font-family: 'Libre Baskerville', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+/*font-family: 'Archivo Narrow', sans-serif;*/
+
+* {
+    /*border: 1px solid black;*/
+    font-family: 'Libre Baskerville', serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+/*-------introduction area setup-----------*/
+.introduction-area {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(185, 249, 252, 0.1);
+}
+
+.introduction-area > img {
+    width: 150px;
+}
+
+@media (min-width: 768px) {
+    .introduction-area > img {
+        width: 250px;
+        margin: 1em 0 0 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .introduction-area > img {
+        width: 350px;
+    }
+}
+
+.introduction-area > p {
+    width: 50%;
+    margin: -40px 0 0 170px;
+    padding-bottom: 1em;
+    font-size: 12px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+
+@media (min-width: 768px) {
+    .introduction-area > p {
+        margin: 0 0 0 350px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .introduction-area > p {
+        font-size: 35px;
+        margin: -2em 0 0 450px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .introduction-area > p {
+        margin: -2em 0 0 650px;
+    }
+}
+
+/*----------nav bar setup---------------*/
+
+.nav-bar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    background-color: rgba(185, 249, 252, 0.1);
+}
+
+@media (min-width: 768px) {
+    .nav-bar {
+        margin-top: 2em;
+    }
+}
+
+.nav-bar ul {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .nav-bar ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar ul > li {
+        padding-top: 1em;
+    }
+
+    .nav-bar ul > a {
+        margin-right: 3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        padding: 0.4em;
+        background-color: coral;
+        border-radius: 10px;
+    }
+
+    .nav-bar ul > a:hover {
+        transform: scale(1.2);
+    }
+
+    .list-nav-bar {
+        margin-top: 1em;
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nav-bar i {
+    padding: 0.5em 1em 0 0;
+}
+
+@media (min-width: 768px) {
+    .nav-bar i {
+        display: none;
+    }
+}
+
+/*-----------cakes main area setup-------------*/
+
+.cakes-main-area {
+    width: 90%;
+    margin: 50px auto 0;
+    display: grid;
+    gap: 0.5em;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto repeat(3, 1fr);
+    justify-items: center;
+    align-content: center;
+}
+
+@media (min-width: 1024px) {
+    .cakes-main-area {
+        margin-top: 6em;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 50% auto;
+    }
+}
+
+@media (min-width: 1440px) {
+    .cakes-main-area {
+        margin-top: 8em;
+    }
+}
+
+.cakes-main-area > img {
+    border-radius: 10px;
+}
+
+.welcome-area {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 1024px) {
+    .welcome-area {
+        grid-column: 3/5;
+    }
+}
+
+.welcome-area > h2 {
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .welcome-area > h2 {
+        padding-top: 1.5em;
+    }
+}
+
+.welcome-area > p {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .welcome-area > p {
+        margin-top: 1.5em;
+        text-align: justify;
+    }
+}
+
+.main-cake {
+    display: flex;
+    width: 100%;
+    height: auto;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    font-size: 35px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: flex-end;
+    color: darkblue;
+    border-radius: 10px;
+    background-image: url(../images/peanut-butter-drip-cake.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+@media (min-width: 1024px) {
+    .main-cake {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+}
+
+/*-------------footer area setup-----------------*/
+
+footer {
+    margin-top: 4em;
+    width: 100%;
+    background-color: rgba(185, 249, 252, 0.1);
+}
+
+@media (min-width: 1024px) {
+    footer {
+        padding-top: 1em;
+    }
+}
+
+@media (min-width: 1440px) {
+    footer {
+        margin-top: 7em;
+    }
+}
+
+.icons-container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .icons-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.icons-container > a {
+    text-decoration: none;
+    color: rgb(87, 3, 3);
+}
+
+.icons-container > a:hover {
+    color: rgb(87, 3, 3);
+}
+
+.icons-container > a > i {
+    margin-top: 1em;
+    border: 1px solid rgb(87, 3, 3);
+    padding: 0.5em;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .icons-container > a > i {
+        margin: 0 2em 0;
+    }
+}
+
+.icons-container span {
+    font-size: 12px;
+}
+
+@media (min-width: 768px) {
+    .icons-container span {
+        margin: 0 0 0 -2em;
+    }
+}
+
+footer > p {
+    width: 90%;
+    margin: 2em auto 0;
+    padding-bottom: 2em;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(87, 3, 3);
+}
