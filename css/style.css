@@ -1,0 +1,241 @@
+/*  Add your styling here */
+*{
+    margin: 0;padding: 0;
+    font-weight: normal;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header,footer{
+    background:#deaaff;
+}
+/* header section */
+header{
+   display: flex;
+    justify-content: space-between;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); 
+   
+}
+.logo{
+    width:50%;
+    mix-blend-mode: multiply;
+    
+}
+.logo img{
+    max-width: 100%;
+}
+
+ header .menu{
+     min-width: 50%;
+    display: flex;
+    text-align: right;
+   flex-direction: column;
+   justify-content: space-between;
+}
+header .menu img{
+    padding: 17px 20px 0px 0px;
+
+}
+header .menu p{
+    padding:17px 20px 17px 0px;
+    
+    font-size: .9rem;
+    font-weight: bold;
+    color: rgb(36, 35, 35);
+    
+}
+nav{
+    display: none;
+}
+/* welcome section*/
+.home{
+    background: #eee;    
+}
+.home .home-content h1{
+    padding: 50px 0px ;
+    font-size: 1.7rem;
+    font-weight:600;
+    color: #832bb9;
+}
+.home .home-content p{
+    
+    padding-bottom: 40px;
+    font-size: 17px;
+    opacity: .4.5;
+    color: #832bb9;
+}
+.home .home-img{
+    max-width: 100%;
+}
+
+/* gallery section*/
+.gallery{
+    margin-top: 55px;
+    background: #eee;
+    display: flex;
+    flex-flow: row wrap;
+}
+.gallery .item{
+    padding: 12px;
+    width: 49%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+   overflow: hidden;
+  
+}
+.gallery .item img{
+    width: 100%;
+    height:38vh;
+    border: 1px solid #832bb9;
+    border-radius:15px;
+    
+}
+.gallery .item img:hover{
+    transform: rotate(20deg)
+}
+/* footer section*/
+footer{
+    margin-top: 25px;
+    
+}
+footer>h2{
+    padding: 22px 0px 0px 12px ;
+    color: #5a0e8a;
+    font-weight: bold;
+}
+footer .contact{
+    text-align: left;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+footer .contact img{
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border: 2px solid #832bb9;
+    border-radius: 10px;
+}
+footer .contact img:hover{
+    background: #832bb9;
+    transform: scale(1.2);
+}
+footer .footer-content p{
+    color: #6d2599;
+    font-weight: 555;
+    font-style: italic;
+    padding: 8px;
+}
+/* start media!!*/
+@media screen and (min-width:540px){
+    header .menu p{
+        font-size:20px;
+        font-weight:450;
+        padding-bottom:30px;
+           
+       }
+       .home .home-content h1{
+        font-size:2rem;
+        color:#481269;
+    }
+    .home .home-content p{
+        font-size: 20px;
+        opacity: .7;
+    }
+  
+}
+
+@media screen and (min-width:900px){
+    header .menu img{
+        display: none;
+    }
+    .logo{
+        width:50%;
+        mix-blend-mode: multiply;
+        
+    }
+    .logo img{
+        width: 45%;
+    }
+    .navbar{
+       margin: 55px;
+        background: #deaaff;
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+        max-height: unset;
+    }
+    .navbar ul{
+        text-align: right;
+        padding: 22px;
+       
+    }
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        width: unset;
+        margin: 0px 12px;
+        padding: 12px;
+    }
+    .navbar ul li a{
+        width: 100px;
+        text-align: center;
+        display: block;
+        background-color: #eee;
+        padding: 7px 5px;
+        color:#481269 ;
+       border-radius: 10px;
+       font-weight: bold;
+    }
+    .navbar ul li a:hover{
+        background:#481269 ;
+        color: #fff;
+        transform:scale(1.15);
+    }
+    .home .container{
+     display: flex;
+     flex-direction: row-reverse; 
+     padding: 0 45px;   
+    }
+    .home .container .home-content{
+        width: 75%;
+        padding: 20px;
+        text-align: right;
+    }
+    .home .container .home-img{
+        width: 25%;
+        padding: 50px 0px 0px 12px;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: row;
+    }
+    .gallery .item{
+        width: 25%;
+        justify-content: space-between;
+    }
+    .gallery .item img{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+        padding-top: 33px;
+
+    }
+    footer .contact{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+  
+}
