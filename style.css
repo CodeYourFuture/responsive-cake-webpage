@@ -1,1 +1,132 @@
-/*  Add your styling here */
+header {
+    min-height: 30vh;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+
+ 
+.subtitle {
+    color: black;
+    padding-top: 28vh;
+    padding-left: 50vw;
+
+    
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+  main {
+      padding-top: 5vh;
+      padding-left: 3vh;
+      padding-right: 3vh;
+  }
+
+  footer {
+      background-color: rgb(218, 186, 186);
+      width: 100%;
+      position: absolute;
+      padding-left: 3vh;
+
+  }
+
+  .button-container {
+      display: flex;
+      flex-direction: column;
+      margin-right: 60vw;
+  }
+
+ .btn {
+     width: 25vw;
+ }
+
+
+@media screen and (min-width: 415px) {
+   
+    header {
+        height: 1rem;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    main {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    
+    nav {
+        margin-top: 3rem !important;
+        align-items: 5vw;
+        margin-left: 30vw;
+        margin-right: 10vw;
+    }
+
+    .nav-item {
+        background-color:darkkhaki;
+        margin-right: 6vw;
+        
+    }
+
+   
+    i {
+        padding-left: 10rem;     
+    }
+
+    .subtitle {
+        height: 5rem;
+        margin-top: -5rem;
+    }
+
+    .img-text-container {
+        display: flex;
+        flex-flow: row-reverse;
+
+    }
+
+    .title-text-container {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        margin-right: 5vw;
+     
+    }
+
+    .main-image {
+        width: 30rem !important;
+    }
+  
+    .four-images-container {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5vw;
+        
+    }
+    
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-right: 5vw;
+        margin: 4rem;
+   
+    }
+
+
+    .nav {
+        top: 0rem;
+        margin-left: 50em;
+        /*margin-right: 10em;*/
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column-reverse;
+      
+        
+    }
+
+}
+
+
