@@ -1,0 +1,180 @@
+:root {
+  --standard-gap-Y: 15vh;
+  --standard-gap-X: 10vw;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(51, 51, 51);
+  background-color: #EAE7DC;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  border-bottom: 1px solid #8e8d8a9c;
+  background-color:#D8C3A5;
+  width: 100%;
+  height:150px;
+  z-index: 1;
+}
+
+header img {
+  max-height: 100px;
+  padding-top: 25px;
+}
+
+nav {
+  text-align: end;
+}
+
+.hidden_nav {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  position: absolute;
+  left: 0;
+  display: none;
+  z-index: -1;
+}
+
+label {
+  display: none;
+}
+
+#toggle {
+  display: none;
+}
+
+.pre_main_nav_hidden {
+    display: none;
+}
+
+.header_right p {
+  display: flex;
+  text-align: end;
+  font-style: italic;
+  font-weight: bolder;
+  
+  padding-left: 10vw;
+  padding-right: 5vw;
+  color: #E85A4F;
+}
+
+main {
+  box-sizing: content-box;
+  padding-top: 200px;
+  padding-left: var(--standard-gap-X);
+  padding-right: var(--standard-gap-X);
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 2em;
+}
+
+main h1{
+    color: #E85A4F;
+}
+
+
+main h1,
+p {
+  text-align: left;
+}
+
+main img {
+  width: 75vw;
+  max-width: 400px;
+  padding-top: var(--standard-gap-Y);
+}
+
+aside img {
+  width: 35vw;
+  max-width: 150px;
+}
+
+aside {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  gap: 30px;
+  box-sizing: content-box;
+  justify-content: center;
+  padding-top: 250px;
+  padding-left: var(--standard-gap-X);
+  padding-right: var(--standard-gap-X);
+  padding-top: var(--standard-gap-Y);
+}
+
+footer {
+  margin-top: var(--standard-gap-Y);
+  background-color: #d8c3a5a9;
+  display: grid;
+  padding-bottom: 3vh;
+}
+
+.short_contact {
+  display: none;
+}
+
+.long_contact span{
+    color: #E85A4F;
+    font-weight: bolder;
+}
+
+footer p {
+  line-height: 0.5em;
+  padding-left: 2vw;
+}
+
+footer h3 {
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  label {
+    display: block;
+    cursor: pointer;
+    font-size: 40px;
+    padding-right: 5vw;
+    padding-top: 20px;
+    
+
+}
+  
+
+  .hidden_nav {
+    display: none;
+   
+  }
+
+  .nav-a {
+    display: block;
+    box-sizing:border-box;
+    border: 2px solid #E98074;
+    background-color: #8e8d8a;
+      color: black;
+    font-size: 1.5rem;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+   
+  }
+  
+  #toggle:checked + .hidden_nav {
+    display: block;
+    padding-top: 75px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+  }
+
+  
+  #toggle:checked + .label {
+   
+   
+  }
+}

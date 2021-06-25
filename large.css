@@ -1,0 +1,165 @@
+.header_right {
+  width: 70%;
+  padding-right: 5vw;
+  display: grid;
+  margin-top: 0;
+  font-style: italic;
+  font-size: 1em;
+  justify-items: end;
+  align-items: center;
+}
+
+.nav_element_main_nav {
+  color: white;
+  width: 100vw;
+  justify-content: center;
+
+  height: 30vh;
+  align-items: center;
+  display: flex;
+}
+
+.pre_main_nav_hidden {
+  display: flex;
+  flex-grow: 1;
+  position: absolute;
+  margin-top: calc(150px + 10vh);
+  width: 70vw;
+  margin-left: 12vw;
+  height: 10vh;
+  align-content: flex-end;
+  justify-content: space-around;
+}
+
+.nav-b.nav-b.is-main {
+  display: flex;
+  color: black;
+  background-color: #e98074;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  box-sizing: border-box;
+  height: 55px;
+  width: 150px;
+  border: 2px solid #8e8d8a9c;
+  text-align: center;
+  justify-content: center;
+  padding-top: 12px;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.nav-b.completed {
+  animation: blink 1s linear 0s 1 alternate;
+}
+
+@keyframes blink {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 1rem #fff;
+  }
+}
+
+.nav-b.is-main:hover {
+  /* this may be wrong sytax */
+  transform: scale(1.3);
+  transition: transform 0.4s;
+  cursor: pointer;
+  color: #e85a4f;
+  background-color: #8e8d8a86;
+  border: #e85a4f 2px solid;
+}
+
+main {
+  display: flex;
+  padding-top: 0px;
+}
+
+.main_right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding-top: 100px;
+  margin: 0px;
+  font-size: 2rem;
+  line-height: 2em;
+}
+
+main img {
+  padding-top: 0px;
+}
+
+.main_img {
+  display: flex;
+  order: 1;
+  flex: 0 0 30%; /* I use this flex to set size as 30vw and then use flex in other div and set to 1 for remaining width */
+  flex-shrink: 0;
+  padding-top: 0px;
+  padding-right: 5vw;
+  max-height: 390px;
+  align-self: center;
+  justify-self: center;
+  /*contain:content;*/
+}
+
+.main_img img {
+  width: 100%;
+  height: 100%;
+}
+
+main h1 {
+  order: 2;
+  text-align: end;
+}
+
+main div,
+p {
+  order: 3;
+  text-align: end;
+}
+
+aside {
+  gap: 5vw;
+  justify-content: space-between;
+}
+
+aside img {
+  width: 15vw;
+  max-width: 250px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+}
+
+.short_contact_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.short_contact {
+  display: flex;
+  padding-right: 11vw;
+  color: #e85a4f;
+  font-weight: bold;
+}
+
+.long_contact {
+  display: none;
+}
+
+footer h3 {
+  order: 2;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+footer p {
+  order: 1;
+  flex-direction: column;
+}
