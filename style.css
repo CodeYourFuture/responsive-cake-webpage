@@ -1,1 +1,58 @@
-/*  Add your styling here */
+/* The following CSS was necessary to achieve the correct look and feel for the website 
+and I could not find a way to implement custom fonts, colours, hover/focus effects without 
+re-compiling bootstraps SASS files. */
+
+/* Misc */
+.mw-1440 {
+  max-width: 1440px;
+}
+
+/* Fonts */
+* {
+  font-family: "Kavoon", cursive;
+  color: #b72470;
+}
+
+.text-font-eczar {
+  font-family: "Eczar", serif;
+}
+
+/* Colours */
+.bg-light-pink {
+  background-color: #f7d9ea;
+}
+
+.bg-dark-pink {
+  background-color: #b72470;
+}
+
+/* Button hover effect */
+.border-bottom-pink {
+  border-bottom: 3px solid #b72470;
+  transition: border-bottom 0.4s ease-out;
+}
+
+.border-bottom-pink:hover,
+.border-bottom-pink:focus {
+  background-color: #9e1c5f;
+  border-bottom: 3px solid #fff;
+  transition: border-bottom 0.1s ease-in;
+}
+
+/* Image hover effect */
+.grow {
+  opacity: 0.6;
+  transition: transform 1s ease, opacity 1s ease-out 0.5s;
+}
+
+.grow:hover {
+  opacity: 1;
+  font-size: 150%;
+  text-align-last: center;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  transform: scale(0.9);
+  -webkit-transition: transform 1s ease, opacity 1s ease-out 0.5s;
+  -moz-transition: transform 1s ease, opacity 1s ease-out 0.5s;
+  transition: transform 1s ease, opacity 1s ease-out 0.5s, font-size 1s ease;
+}
