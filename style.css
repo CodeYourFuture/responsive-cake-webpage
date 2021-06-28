@@ -1,1 +1,265 @@
-/*  Add your styling here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #eee;
+}
+
+.container{
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header,
+footer{
+    background-color: #ff6392;
+}
+
+/* Start Header */
+
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+header .logo img{
+    max-width: 100%;
+}
+header .text-mneu{
+    padding: 10px 0;
+    min-width: 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .text-mneu img{
+    width: 40px;
+    filter: invert(1);
+    margin-bottom: 30px;
+}
+
+header .text-mneu p{
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+/* Nav Start */
+
+nav{
+    display: none;
+}
+
+/* Start Welcome */
+.welcome{
+    margin-top: 15px;
+}
+
+.welcome-text h1{
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #ff6392;
+}
+
+.welcome-text p{
+    line-height: 25px;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+.welcome-image{
+    margin-top: 20px;
+}
+.welcome-image img{
+    max-width: 100%;
+}
+
+
+/* Start Gallary */
+
+.gallary .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.img-box{
+    width: 49%;
+    padding: 5px;
+    border: 1px solid #ff6392;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.img-box img{
+    max-width: 100%;
+    transition: all .5s ease-in-out;
+}
+.img-box:first-child img:hover{
+    transform: rotate(15deg) scale(1.3);
+}
+.img-box:nth-child(2) img:hover{
+    transform: scale(1.5);
+}
+.img-box:nth-child(3) img:hover{
+    transform: rotate(-15deg) scale(1.25);
+}
+.img-box:last-child img:hover{
+    transform: scale(1.5) translateX(-50px);
+}
+/* Start Footer */
+
+footer h3{
+    color: #dfdfdf;
+    margin-bottom: 10px;
+    text-shadow: 0px 1px 2px #000;
+}
+footer ul{
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+footer ul li{
+    list-style-type: none;
+    margin-bottom: 5px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 14px;
+}
+footer ul li a:hover{
+    color: #fff;
+}
+footer p{
+    color: #dfdfdf;
+    text-align: center;
+    font-size: .8rem;
+}
+@media (min-width:500px) {
+    .container{
+        padding: 40px;
+    }
+    header .logo{
+        width: 45%;
+        padding: 10px;
+    }
+    header .logo img{
+        max-width: 100%;
+    }
+    header .text-mneu img{
+        width: 50px;
+    }
+    header .text-mneu p{
+        font-size: 1.2em;
+    }
+
+
+    .welcome-text p{
+        font-size: 1rem;
+    }
+
+
+
+    footer h3{
+        font-size: 1.5rem;
+    }
+    footer ul{
+        padding-left: 30px;
+    }
+    footer ul li a{
+        font-size: 16px;
+    }
+    footer p{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:900px){
+    header .text-mneu img{
+        display: none;
+    }
+    nav{
+        display: block;
+        position: relative;
+        top: 0;
+        right: 0;
+        max-height: unset;
+    }
+    nav .container{
+        padding: 40px;
+    }
+    nav .container .nav-box{
+        background: #d86e8f;
+        padding: 0px;
+    }
+    nav ul{
+        text-align: right;
+        padding: 20px;
+    }
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 10px;
+        padding: 0;
+        width: unset;
+    }
+    nav ul li a{
+        width: 100px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        background-color: #fff;
+        padding: 7px 5px;
+        color: #d86e8f;
+        transition: all 0.3s ease-in-out;
+    }
+    nav ul a:hover{
+        border-radius: 10px;
+        background-color: #555;
+        color: #fff;
+    }
+
+    .welcome .container{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 40px;
+    }
+    .welcome-text{
+        width: 50%;
+        padding: 30px;
+        text-align: right;
+    }
+    .welcome-image{
+        width: 50%;
+    }
+    .welcome-text h1{
+        font-size: 50px;
+        margin-bottom: 60px;
+    }
+    .welcome-text p{
+        text-align: right;
+    }
+    .gallary .container{
+        flex-flow: row nowrap;
+    }
+    .img-box{
+        width: 24%;
+    }
+}
