@@ -1,1 +1,346 @@
 /*  Add your styling here */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+main{
+    padding: 1rem;
+    
+}
+
+h1{
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+/* ------   HAMVURGER MENU STARTS--------- */
+
+nav{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    opacity: 2;
+    
+}
+.hamBurger-Menu{
+    font-size: 3.6rem;
+    height: 175px;
+}
+
+.menu_list{
+    transform: translateX(-155%);
+    transition: transform 0.4s ease-in-out;
+    display: none;
+     
+}
+
+
+.hamBurger-Menu input[type="checkbox"]{
+    width: 2rem;
+    height: 4rem;
+    position: relative;
+    z-index: 5;
+    opacity: 0;
+    top: 17px;
+}
+
+.hamBurger-Menu input[type="checkbox"]:checked ~ .menu_list{
+    display: block;
+    transform: translateX(0%);
+       
+}
+
+.hamBurger-lines{
+
+    color: orangered;
+    width: 10px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.hamBurger-lines .line{
+    background-color: black;
+    width: 30px;
+    height: 3px;
+    margin-top: 5px;
+    display: block;
+}
+
+.hamBurger-lines .line-1{
+    transform-origin: 0% 0%;
+}
+
+.hamBurger-lines .line-3{
+    transform-origin: 0% 100%;
+    
+}
+
+.hamBurger-Menu input[type="checkbox"]:checked ~ .hamBurger-lines .line-1{
+    transform: rotate(20deg);
+}
+
+.hamBurger-Menu input[type="checkbox"]:checked ~ .hamBurger-lines .line-2{
+    display: none;
+}
+
+.hamBurger-Menu input[type="checkbox"]:checked ~ .hamBurger-lines .line-3{
+    transform: rotate(-20deg);
+}
+
+.menu_list li{
+    list-style: none;
+    font-size: bolder;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    z-index: 4;
+      
+}
+
+     /* ------   HAMVURGER MENU  ENDS--------- */
+
+
+.top-cup-section{
+    
+    height: 150px;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* gap: 2px; */
+    z-index: 3;
+}
+
+.t-img{
+    /* margin-top: 10rem; */
+    width: 150px;
+    height: 220px;
+    padding-top: 3rem;
+    
+}
+
+.our-slogan{
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 2rem .1rem;
+}
+
+/* <!-- ------ WELCOME SECTION starts------ --> */
+
+.welcome{
+    background-color: #e8e8e4;
+    height: auto;
+    
+}
+
+.welcome p{
+    font-size: 1.6rem;
+    margin: .5rem 1rem;   
+}
+
+/* <!-- ------ 1st FEATURE SECTION starts------ --> */
+
+.feature-1{
+    background-color: pink;
+    margin: 1rem 0;
+    height: 17rem;
+    align-items: center;
+    display: flex;
+    
+}
+
+.f-img{
+    width: 25rem;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+
+        /* <!-- ------ other item SECTION starts------ --> */
+
+.other-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8e4;
+    
+}
+
+.other-item-container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap;
+    
+}
+
+.other-item-container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-wrap: wrap; 
+}
+
+.other-item-container-1 img, .other-item-container-2 img{
+    width: 138px;
+    height: 100px;
+    margin: 1rem;
+}
+
+  /* ----Footer------- */
+  .footer-container{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    background-color: #fae1dd;
+}
+
+
+.logo a {
+    text-decoration: none;
+    font-size: large;
+    margin: .5rem 0;
+    
+}
+
+.social-container, .contact-container, .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  
+}
+
+.social-container li, .contact-container li{
+    margin-right: .5rem;
+    list-style: none;
+}
+
+.social-container li a, .contact-container li a{
+    margin: .2rem 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+.social-container li a:hover, .contact-container li a:hover{
+    color: rgb(134, 60, 60);
+    
+}
+
+        /* 1st media query----------- */
+@media screen and (min-width: 540px){
+
+
+    .hamBurger-Menu input[type="checkbox"]{
+        width: 3rem;
+        height: 4rem;
+        position: relative;
+        z-index: 5;
+        opacity: 0;
+        top: -20px;
+    }
+ 
+    .top-cup-section{
+        height: 200px;
+    }
+
+    .social-container, .logo{
+        display: flex; 
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem;
+      
+    }
+
+    .other-item-container-1, .other-item-container-2{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        flex-wrap: wrap;
+        
+    }
+    
+    .other-item-container-1 img, .other-item-container-2 img{
+        width: 200px;
+        height: 200px;
+        margin: 1rem;
+    }
+
+    .t-img{
+        width: 220px;
+        height: 282px;
+        
+    }
+
+    .mq-540{
+        display: none;
+    }
+}
+
+
+    /* ---------2nd media query----------- */
+
+
+    @media screen and (min-width: 900px){
+
+        .hamBurger-Menu input[type="checkbox"]{
+            width: 3rem;
+            height: 4rem;
+            position: relative;
+            z-index: 5;
+            opacity: 0;
+            top: -20px;
+        }
+    
+        
+        .top-cup-section{
+            height: 200px;
+        }
+    
+        .social-container, .logo{
+            display: flex; 
+            justify-content: space-around;
+            align-items: center;
+            margin: 1rem;
+          
+        }
+    
+        .other-item-container-1, .other-item-container-2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100vw;
+            flex-wrap: wrap;
+            
+        }
+        
+        .other-item-container-1 img, .other-item-container-2 img{
+            width: 200px;
+            height: 200px;
+            margin: 1rem;
+        }
+    
+        .t-img{
+            width: 220px;
+            height: 282px;
+            
+        }
+    
+        .mq-540{
+            display: none;
+        }
+
+    }    
