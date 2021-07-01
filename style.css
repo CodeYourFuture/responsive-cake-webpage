@@ -1,1 +1,264 @@
-/*  Add your styling here */
+/*  Universal Styles */
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*Header Styles*/
+header {
+  margin: 0;
+}
+
+.topnav {
+  margin: 0;
+  overflow: hidden;
+  background-color: #efd3d7;
+  position: relative;
+}
+
+.topnav #links {
+  display: none;
+}
+
+.topnav a {
+  color: #22223b;
+  padding: 0.8em 0.5em;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: 'Noto Sans JP', sans-serif;
+  display: block;
+}
+
+/*Style the hamburger menu*/
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #e5989b;
+}
+
+#logo {
+  width:48px;
+  height: 48px;
+  padding: 0.3em;
+}
+
+.topnav p {
+  color: #22223b;
+  font-size: 0.9rem;
+  font-style: italic;
+  max-width: 60%;
+  float: right;
+  margin-right: -10%;
+}
+
+@media screen and (max-width: 539px) {
+  .header, .nav-list {
+  display: none;
+  }
+}
+/* Main Styles*/
+main {
+  margin: 2%;
+}
+
+/*Hero styles*/
+.hero img {
+  object-fit: contain;
+  max-width: 100%;
+  padding-bottom: 5%;
+}
+
+.hero-ctn {
+  position: relative;
+}
+
+.hero-ctn .hero-btn {
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  background-color: #efd3d7;
+  padding: 0.5em;
+  border: none;
+  border-radius: 3px;
+}
+
+.hero-btn a {
+  color: #7400b8;
+  text-decoration: none;
+}
+
+.hero-ctn .hero-btn:hover {
+  background-color: #f28482;
+}
+
+/*Gallery Section*/
+.gallery-ctn {
+  display: grid;
+  grid-template-areas: 
+  "box1 box2"
+  "box3 box4";
+  gap: 2%;
+}
+
+.box1, .box2, .box3, .box4 {
+  position: relative;
+}
+
+.gallery-ctn img {
+  width: 100%;
+}
+
+ .grid-btn {
+  position: absolute;
+  top: 85%;
+  left: 3%;
+  background-color: #efd3d7;
+  padding: 0.3em;
+  border: none;
+  border-radius: 3px;
+}
+
+.grid-btn a {
+  color: #7400b8;
+  text-decoration: none;
+}
+
+.grid-btn:hover {
+  background-color: #f28482;
+}
+
+/*Content Styles*/
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content img {
+  max-width: 50%;
+  padding-bottom: 2%;
+  margin-left: 2%;
+}
+
+/*Footer Styles*/
+footer {
+  background-color: #eae4e9;
+}
+
+footer p {
+  margin: auto;
+  background-color: #eae4e9;
+  font-weight: 200;
+  text-align: center;
+}
+
+@media screen and (min-width: 540px) { 
+  .topnav {
+    display: none;
+  }
+
+  .header {
+    position: relative;
+    background-color: #efd3d7;
+  }
+
+  #logo {
+    padding: 1em;
+    width: 100px;
+    height: auto;
+  }
+
+  .header p {
+    padding-right: 2%;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .nav-list {
+    max-width: 96%;
+    padding: 2em;
+    background-color: #cddafd;
+    display: flex;
+    margin-right: -6%;
+    justify-content: flex-end;
+  }
+
+  .nav-list li {
+    display: inline;
+    list-style-type: none;
+  }
+
+  .nav-list .nav-btn {
+    background-color: #fff1e6;
+    color: #013a63;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    border: none;
+    border-radius: 5%;
+    float: right;
+  }
+
+  .nav-btn a {
+    color: #7400b8;
+    text-decoration: none;
+  }
+
+  .content img {
+    max-width: 30%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .hero-ctn {
+    padding-right: 2%;
+  }
+  .welcome {
+    max-width: 50%;
+  }
+
+  .welcome h1 {
+    text-align: right;
+    font-size: 2em;
+  }
+
+  .welcome p {
+    font-size: 1.2em;
+  }
+
+  .gallery-ctn {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .gallery-ctn img {
+    max-width: 100%;
+  }
+
+  .content {
+    flex-direction: row;
+    width: 700px;
+    margin: auto;
+  }
+
+  .content img {
+    max-width: 23%;
+    padding: 0.075em;
+   
+  }
+}
