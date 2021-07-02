@@ -1,1 +1,20 @@
-/*  Add your styling here */
+/*background-image: var(--bs-gradient);*/
+
+body {
+  background-image: url('design/bkgr.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.teal-color {
+  background:     #4ac3c4;
+}
+.pink-color {
+  color: #d63384;
+}
+/*@media (min-width: 992px) {
+  #intro {
+    margin-top: -58.59px;
+  }
+}
+*/
